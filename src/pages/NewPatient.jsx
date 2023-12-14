@@ -24,7 +24,7 @@ const NewPatient = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3002/patients', patientData, {
+      const response = await axios.post('https://hospital-wkwk.onrender.com/patients', patientData, {
         headers: {
           'Content-Type': 'application/json',
         },

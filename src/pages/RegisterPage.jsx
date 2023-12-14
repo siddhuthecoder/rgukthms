@@ -21,7 +21,7 @@ const RegisterPage = () => {
 
     try {
       // Make a request to the server
-      const response = await axios.post('http://localhost:3002/auth/register', formData);
+      const response = await axios.post('https://hospital-wkwk.onrender.com/auth/register', formData);
 
       // Display a toast with the ID and password
       toast.success(`ID: ${response.data.doctorId}, Password: ${response.data.password}`, {

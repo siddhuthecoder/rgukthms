@@ -13,7 +13,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3002/doctor/${localStorage.getItem('doctorId')}`);
+        const response = await axios.get(`https://hospital-wkwk.onrender.com/doctor/${localStorage.getItem('doctorId')}`);
         const responseData = response.data;
         setData(response.data);
         setLoading(false);

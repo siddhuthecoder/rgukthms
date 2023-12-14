@@ -25,7 +25,7 @@ const Prescription = () => {
       // Hardcoded doctor's ID or name
       
   console.log(localStorage.getItem('doctorId'));
-      const response = await axios.post(`http://localhost:3002/patients/${patientId}/prescriptions`, {
+      const response = await axios.post(`https://hospital-wkwk.onrender.com/patients/${patientId}/prescriptions`, {
         ...prescriptionData,
         doctorName: localStorage.getItem('doctorName'),
       }, {

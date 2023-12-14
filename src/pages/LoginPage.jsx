@@ -31,7 +31,7 @@ const LoginPage = () => {
     };
 
     try {
-      const savedUserResponse = await fetch("http://localhost:3002/auth/login", {
+      const savedUserResponse = await fetch("https://hospital-wkwk.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
