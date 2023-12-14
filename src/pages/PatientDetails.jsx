@@ -14,7 +14,7 @@ const PatientDetails = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://hospital-wkwk.onrender.com/${patientId}`
+          `https://hospital-wkwk.onrender.com/patients/${patientId}`
         );
 
         if (isMounted) {
